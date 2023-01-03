@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Roboto:wght@100;400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: rgb(69, 255, 109);
+    font-size: 2rem;
+    text-align: center;
+}
+/* navigasi */
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 0 5%;
+}
+header .logo{
+    font-family: 'Caramel', cursive;
+    text-decoration: none;
+    font-size: 4rem;
+    color:rgb(69, 255, 109);
+    font-weight: bolder;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav .menu{
+    display: none;
+    padding: 0.375rem;
+    flex-direction: column;
+    height: 1.2rem;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    box-sizing: content-box;
+}
+header nav .menu span{
+    width: 1.75rem;
+    height: 0.1875rem;
+    background-color: white;
+    border-radius: 0.1875rem;
+    display: block;
+    padding: 0;
+}
+header nav a, header nav span{
+    color: rgb(69, 255, 109);
+    padding:0.3rem;
+    text-decoration: none;
+}
+header nav .aktif{
+    color: orange;
+}
+header nav .hover{
+    transition: 0.3s;
+}
+header nav .hover:hover{
+    color: rgba(69, 255, 109, 0.7);
+}
+header nav ul{
+    display: flex;
+    margin-right: 4rem;
+}
+header nav ul li{
+    list-style: none;
+    padding: 1rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(69, 255, 109);
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    color: orange;
+}
+/* akhir dari navigasi */
+section{padding: 6rem 5% 0 5%;}
+/* tentang */
+#tentang{
+    display: flex;
+    padding-top: 7rem;
+    align-items: center;
+}
+#tentang img{
+    min-width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+    object-position:50% 20%;
+}
+#tentang .profil{
+    width: 60%;
+    margin-left: 5rem;
+}
+#tentang .profil h1{
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: start;
+}
+#tentang .profil p{
+    font-size: 1.25rem;
+    padding: 1rem;
+    color: white;
+}
+#tentang .profil p span{
+    font-style: italic;
+}
+#tentang .profil .kontak{
+    display: flex;
+    align-items: center;
+}
+#tentang .profil .kontak .email{
+    display: flex;
+    align-items: center;
+}
+#tentang .profil .kontak a i, #tentang .profil .kontak .email i{
+    font-size: 2rem;
+    color: rgb(69, 255, 109);
+    padding: 0 1rem;
+}
+#tentang .profil .kontak .email span{
+    color: white;
+}
+/* akhir dari tentang */
+
+/* hobi */
+#hobi .daftar-hobi{
+    display: flex;
+    justify-content: center;
+}
+#hobi .daftar-hobi .hobi{
+    width: 22%;
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+#hobi img{
+    width: 100%;
+    height: 90%;
+}
+#hobi h3{
+    color: rgb(69, 255, 109);
+    text-align: center;
+}
+/* akhir dari hobi */
+
+/* prestasi */
+#prestasi .daftar-prestasi{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#prestasi .daftar-prestasi .prestasi{
+    width: 30%;
+    margin-top: 1.5rem;
+}
+#prestasi .daftar-prestasi .prestasi a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+#prestasi .daftar-prestasi .prestasi a span{
+    font-style: italic;
+}
+#prestasi .daftar-prestasi .prestasi img{
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+#prestasi .daftar-prestasi .prestasi a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+/* akhir dari prestasi */
+
+/* pengalaman */
+#pengalaman ul{margin-top: 1.5rem;}
+#pengalaman ul li{
+    color: white;
+    margin: 0.625rem;
+    font-size: 1.25rem;
+}
+/* akhir dari pengalaman */
+
+/* pendidikan */
+#pendidikan{
+    color: white;
+}
+#pendidikan .daftar-pendidikan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+#pendidikan .daftar-pendidikan .pendidikan{
+    width: 45%;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+#pendidikan .daftar-pendidikan .pendidikan h4{
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+#pendidikan .daftar-pendidikan .pendidikan p{
+    font-size: 1.25rem;
+}
+/* akhir dari pendidikan */
+
+/* footer */
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+footer p span{
+    color: rgb(69, 255, 109);
+}
+.bahasa a, .bahasa span{
+    color: rgb(69, 255, 109);
+}
+/* akhir dari footer */
+
+/* media query 1000px */
+@media screen and (max-width: 1000px){
+    header nav ul{
+        margin-right: 1rem;
+    }
+    header nav ul li{
+        padding: 1rem 0.5vw;
+    }
+    #tentang .profil{
+        width: 70%;
+        margin-left: 1rem;
+    }
+    #hobi .daftar-hobi{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #hobi .daftar-hobi .hobi{
+        width: 40%;
+        margin: 1rem;
+    }
+    #prestasi .daftar-prestasi{
+        justify-content: space-around;
+    }
+    #prestasi .daftar-prestasi .prestasi{
+        width: 40%;
+    }
+    #pendidikan .daftar-pendidikan .pendidikan{
+        width: 47%;
+    }
+}
+@media screen and (max-width: 769px){
+    header nav ul{
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background-color: black;
+        margin: 0 auto;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .ul.active{
+        height: 265px;
+    }
+    .ul.active li{
+        opacity: 1;
+    }
+    header nav ul li{
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    header nav .menu{
+        display: flex;
+        cursor: pointer;
+    }
+    header nav .menu:hover{
+        border: 1px solid white;
+        margin-right: 1.4375rem;
+    }
+    #tentang{
+        flex-direction: column;
+    }
+    #tentang .profil{
+        width: 80%;
+        margin-left: 0;
+    }
+    #pendidikan .daftar-pendidikan .pendidikan{
+       width: 100%;
+    }
+}
+@media screen and (max-width: 477px){
+    
+    #tentang .profil {
+        width: 100%;
+    }
+    #tentang .profil h1{
+        text-align: center;
+    }
+    #tentang .profil .kontak{
+        display: block;
+    }
+    #tentang .profil .kontak .email{
+        margin-top: 1rem;
+    }
+    #hobi .daftar-hobi .hobi {
+        width: 80%;
+    }
+    #prestasi .daftar-prestasi .prestasi {
+        width: 90%;
+    }
+}
